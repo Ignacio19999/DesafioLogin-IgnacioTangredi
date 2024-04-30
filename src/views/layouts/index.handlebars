@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoGamers</title>
+</head>
+<body>
+    <div>
+        {{#if isNotLoggedIn}}
+        <a href="/login">Login</a>
+        {{/if}}
+
+        {{#if isLoggedIn}}
+        <a href="/profile">Mi perfil</a>
+        <a href="/api/sessions/logout">Salir</a>
+    </div>
+</body>
+</html>
