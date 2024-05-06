@@ -1,5 +1,5 @@
 const LocalStrategy = require('passport-local').Strategy;
-const User = require('../models/user.model'); // Asegúrate de importar el modelo de usuario adecuado
+const User = require('../models/user.model');
 
 module.exports = function(passport) {
   passport.use(new LocalStrategy(
